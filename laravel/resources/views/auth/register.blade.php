@@ -7,7 +7,7 @@
     {{-- Fonte romântica --}}
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 
-    <style>
+     <style>
         body {
             margin: 0;
             padding: 0;
@@ -28,18 +28,23 @@
             padding: 40px;
             border-radius: 15px;
             box-shadow: 0 0 20px rgba(0,0,0,0.3);
-            text-align: center;
-            width: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 320px;
         }
 
         h1 {
             font-size: 2.5em;
             color: #ECD36E;
             margin-bottom: 20px;
+            text-align: center;
         }
 
-        input {
+        input, button {
             width: 100%;
+            max-width: 100%;
+            box-sizing: border-box;
             padding: 12px;
             margin: 10px 0;
             border: 1px solid #ccc;
@@ -48,7 +53,7 @@
         }
 
         button {
-          background-color: #93b7caff;
+            background-color: #93b7caff;
             color: white;
             border: none;
             padding: 15px 30px;
@@ -57,6 +62,7 @@
             cursor: pointer;
             transition: background-color 0.3s ease, transform 0.2s ease;
         }
+
         button:hover {
             background-color: #011526;
             transform: scale(1.05);
@@ -66,6 +72,29 @@
             color: red;
             font-size: 0.9em;
             margin-top: -5px;
+            width: 100%;
+            text-align: left;
+        }
+
+        .status {
+            color: green;
+            font-weight: bold;
+            margin-bottom: 15px;
+            width: 100%;
+            text-align: left;
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 15px;
+            color: #93b7ca;
+            font-weight: bold;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>

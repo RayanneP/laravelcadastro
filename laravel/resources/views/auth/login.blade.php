@@ -31,14 +31,16 @@
             font-size: 2.5em;
             color: #ECD36E;
         }
-        input {
-            display: block;
-            width: 100%;
-            padding: 10px;
-            margin: 15px 0;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-        }
+input {
+    display: block;
+    width: 80%;
+    max-width: 300px;
+    margin: 15px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
          button {
           background-color: #93b7caff;
             color: white;

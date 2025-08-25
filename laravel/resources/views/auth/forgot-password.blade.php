@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Redefinir Senha - A Bela e a Fera</title>
 
-    {{-- Fonte romântica --}}
+    <!-- Fonte romântica -->
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 
     <style>
@@ -28,7 +28,9 @@
             padding: 40px;
             border-radius: 15px;
             box-shadow: 0 0 20px rgba(0,0,0,0.3);
-            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             width: 320px;
         }
 
@@ -36,10 +38,13 @@
             font-size: 2.5em;
             color: #ECD36E;
             margin-bottom: 20px;
+            text-align: center;
         }
 
-        input {
+        input, button {
             width: 100%;
+            max-width: 100%;
+            box-sizing: border-box;
             padding: 12px;
             margin: 10px 0;
             border: 1px solid #ccc;
@@ -56,7 +61,6 @@
             border-radius: 30px;
             cursor: pointer;
             transition: background-color 0.3s ease, transform 0.2s ease;
-            width: 100%;
         }
 
         button:hover {
@@ -68,22 +72,26 @@
             color: red;
             font-size: 0.9em;
             margin-top: -5px;
+            width: 100%;
+            text-align: left;
         }
 
         .status {
             color: green;
             font-weight: bold;
             margin-bottom: 15px;
+            width: 100%;
+            text-align: left;
         }
 
         a {
-            display: inline-block;
+            display: block;
             margin-top: 15px;
-            color: #93b7ca;
-            font-weight: bold;
-            text-decoration: none;
-            font-family: Arial, sans-serif;
+            font-size: 0.9em;
+            color: #333;
+            text-decoration: underline;
         }
+
         a:hover {
             text-decoration: underline;
         }
@@ -97,21 +105,22 @@
             <div class="status">{{ session('status') }}</div>
         @endif
 
-        <form method="POST" action="{{ route('password.update') }}">
+        <form method="POST" action="{{ route('password.update') }}" style="width: 100%;">
             @csrf
-            {{-- email --}}
+
+            <!-- email -->
             <input type="email" name="email" placeholder="Seu e-mail encantado" value="{{ old('email') }}" required autofocus>
             @error('email')
                 <div class="error">{{ $message }}</div>
             @enderror
 
-            {{-- nova senha --}}
+            <!-- nova senha -->
             <input type="password" name="password" placeholder="Nova senha mágica" required>
             @error('password')
                 <div class="error">{{ $message }}</div>
             @enderror
 
-            {{-- confirmação da senha --}}
+            <!-- confirmação da senha -->
             <input type="password" name="password_confirmation" placeholder="Confirmar nova senha" required>
 
             <button type="submit">Redefinir Agora</button>
