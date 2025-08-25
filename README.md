@@ -7,7 +7,7 @@ Projeto crud de 5 telas (Login, Cadastro, Esqueci a Senha e Home) utilizando Lar
 <img width="1919" height="872" alt="login" src="https://github.com/user-attachments/assets/0ab92619-5e56-4cf6-95ed-5542385a9120" />
 
 
-<img width="1919" height="869" alt="Captura de tela 2025-08-25 141632" src="https://github.com/user-attachments/assets/c88a3adf-6417-4020-aa54-92797d324dc2" />
+<img width="1919" height="869" alt="Captura de tela 2025-08-25 142906" src="https://github.com/user-attachments/assets/4b2c7f32-f119-4041-b457-92c7186f1aa8" />
 
 
 <img width="1919" height="871" alt="Captura de tela 2025-08-25 141652" src="https://github.com/user-attachments/assets/9d0b5b19-7a44-431b-8b52-e10cdaae790a" />
